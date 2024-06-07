@@ -9,7 +9,6 @@
 body {
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .img-container {
@@ -18,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    width: max(40vw, 320px);
+    width: max(60vw, 320px);
     background-image: url('images/salon.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -50,4 +49,79 @@ a {
 .logo-image {
     position: relative;
     bottom: 8px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f9fafb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+
+.summary {
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 800px;
+    margin: 0 40px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: none;
+    padding: 16px 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(207, 206, 206);
+}
+
+#form-header {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+
+}
+
+label, input {
+    display: block;
+    width: 240px;
+}
+
+label {
+    font-size: 12px;
+    color: grey;
+}
+
+input{
+    height: 24px;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 4px;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+.form-element {
+    margin: 0 40px 24px;
+}
+
+button {
+    margin: 28px 40px;
+    background-color: #8c654c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgb(207, 206, 206);
+}
+
+.log-in {
+    margin: -20px 40px;
 }
